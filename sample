@@ -1,0 +1,9 @@
+#!/bin/bash
+
+./lookup.py \
+    source/occ.list \
+    --dataset \
+        dataset/List_of_Greek_mythological_figures.list \
+        dataset/People_in_Norse_mythology_and_legends.list \
+    | sort -k1nr | less -SN
+
